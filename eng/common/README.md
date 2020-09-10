@@ -22,4 +22,4 @@ The 'Sync eng/common directory' PRs will be created in the language repositories
     - First make sure all checks in the **Sync PRs** are green and approved. The **Tools PR** contains links to all the **Sync PRs**. If for some reason the PRs is blocked by a CI gate get someone with permission to override and manually merge the PR.
     - To test the state of all the **Sync PRs**, you can download the `PRsCreated.txt` artifact from your `azure-sdk-tools - sync - eng-common` pipeline, then run `./eng/scripts/Verify-And-Merge.ps1 <path to PRsCreated.txt>` which will output the status of each associated PR.
     - Next approve the `VerifyAndMerge` job for the `azure-sdk-tools - sync - eng-common` pipeline triggered by your **Tools PR** which will automatically merge all the **Sync PRs**. You need `azure-sdk` devops contributor permissions to reach the `azure-sdk-tools - sync - eng-common` pipeline.
-    - Finally merge the **Tools PR**. 
+    - Finally merge the **Tools PR**.
